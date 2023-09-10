@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF3E0; 
+        }
+        header {
+            background-color: #FF6B6B; 
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .resumen, .intereses, .contacto {
+            background-color: #A4DACC; 
+            color: #333333; 
+        }
+        .encabezado {
+            background-color: #FF6B6B;
+            color: #FFFFFF;
+        }
+        footer {
+            background-color: #FF6B6B;
+            color: #050000;
+            text-align: center;
+            padding: 10px;
+        }
+        a {
+            color: #0e0000;
+        }
+    </style>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Fanzago Exequiel</h1>
+        <p>Soy una persona amable y muy amiguera.</p>
+    </header>
+    
+    <section class="resumen">
+        <h2>Experencia o informacion personal</h2>
+        <p>Me gustaria profundizar mas en la programacion.</p>
+    </section>
+
+    <section class="intereses">
+        <h2>Pasa tiempos</h2>
+        <p>Fanatico de Leo Messi, Messi.</p>
+    </section>
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>Sígueme en redes sociales:</p>
+        <a href="https://twitter.com/tucuenta" target="_blank">Twitter</a> |
+        <a href="https://www.linkedin.com/in/tuperfil" target="_blank">LinkedIn</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #00d991;
+            color: #060000;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        section {
+            margin: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fanzago Exequiel</h1>
+        <p>Soy una persona muy sociable</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="experiencia">
+        <h2>Mi Experiencia</h2>
+        <article>
+            <h3>Experiencia Académica</h3>
+            <p>Me costo un poco el primer año</p>
+        </article>
+        <article>
+            <h3>Experiencia Laboral</h3>
+            <p>Tengo poca experiencia laboral</p>
+        </article>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <article>
+        <h2>Título del Artículo</h2>
+        <p>Fecha de publicación: <time datetime="18-12-2022">18 de Diciembre de 2022(Fuimos y seremos enternos campeones del mundo)</time></p>
+        <section>
+            <h3>Introducción</h3>
+            <p>Messi Messi Messi Messi Messi Messi </p>
+        </section>
+        <section>
+            <figure>
+                <img src="Messi.gif" alt=""width="600"height="600">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+        <section>
+            <h3>Conclusión</h3>
+            <p>Que somos campeones del mundo mundial</p>
+        </section>
+    </article>
+</body>
+</html>
